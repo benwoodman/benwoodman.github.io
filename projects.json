@@ -1,0 +1,34 @@
+[
+    {
+        "name": "C In-Memory Database",
+        "description": "In-memory database server written in C from scratch. Using this project to refresh my skills in C (low-level programming), data structure fundamentals, and network protocols. I also want to better understand in-memory databases such as Redis. View current source-code in database.c. PLEASE NOTE: this project is still work in progress and this repo is only to document my progress.",
+        "images": [],
+        "link": "https://github.com/benwoodman/C-In-Memory-Database",
+        "link_text": "More Information/Source Code`"
+
+    },
+    {
+        "name": "GradeBuddy",
+        "description": "GradeBuddy is a service that allows classmates to co-grade each other's work. While being a TA for COMP 283, I found that there were multiple times that it would have been very helpful for the students to grade each other's work based on a rubric and provide feedback before we graded it.",
+        "images": [],
+        "link": "https://github.com/benwoodman/gradebuddy",
+        "link_text": "More Information"
+
+    },
+    {
+        "name": "KTP Candidate Management System",
+        "description": "Custom candidate managment system for the KTP Eta chapter, making it easier for current and interested new members.",
+        "images": [],
+        "link": "",
+        "link_text": "More Information"
+
+    },
+    {
+        "name": "2048",
+        "description": "A version of the 2048 game written for my COMP 426 class. CSS styling works best on Chrome, there are some issues in other browsers that I have yet to have time to work on.",
+        "images": ["img/2048/2048.png"],
+        "link": "https://github.com/benwoodman/2048",
+        "link_text": "More Information"
+
+    }
+]

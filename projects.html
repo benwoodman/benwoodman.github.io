@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta name="description" content="_" />
+        <meta name="title" property="og:title" content="Benjamin Woodman" />
+        <meta property="og:type" content="Website" />
+        <meta name="image" property="og:image" content="featured.png" />
+        <meta name="description" property="og:description" content="I am a third year Computer Science student at UNC-Chapel Hill. I have a particular interest in the intersection between technology, health, and statistics." />
+        <meta name="author" content="Ben Woodman" />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Projects</title> 
+        <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+    </head>
+    <body>
+        <div id="home-wrapper">
+            <div id="featured-image">
+                <div id="portfolio-image"></div>
+            </div>
+            
+            <div id="right-box">
+                <div id="titlebar">
+                    <div class="buttons">
+                        <div class="close">
+                          <a class="closebutton" href="#"><span><strong>x</strong></span></a>
+                          <!-- close button link -->
+                        </div>
+                        <div class="minimize">
+                          <a class="minimizebutton" href="#"><span><strong>&ndash;</strong></span></a>
+                          <!-- minimize button link -->
+                        </div>
+                        <div class="zoom">
+                          <a class="zoombutton" href="#"><span><strong>+</strong></span></a>
+                          <!-- zoom button link -->
+                        </div>
+                    </div>
+                    Ben-Woodman-Portfolio.html
+                </div>
+                <div id="portfolio">
+                    
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="main.js"></script>
+        <script type="text/babel" src="portfolio.js"></script>
+        <script type="text/babel">
+            const setup = async () => {
+                const projects = await loadPortfolio();
+                await ReactDOM.render(<PortfolioHeaders projects={projects}></PortfolioHeaders>, document.getElementById('portfolio'));
+                startTyping('typed-strings', 7, 3);
+            }
+            setup();
+        </script>
+    </body>
+</html>
